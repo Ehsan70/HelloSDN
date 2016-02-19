@@ -33,9 +33,13 @@ from ryu.lib import dpid as dpid_lib
 """
 Usage Example:
     1. Run this application:
-    $ sudo ryu-manager --verbose --observe-links ~/code/RyuApp/l2.py
-    2. Join switches (use your favorite method):
-    $ sudo mn --controller=remote --topo linear,2
+    $ sudo ryu-manager --verbose --observe-links < Address of Simple_controller.py>
+    In my case I have:~/ryu/bin/ryu-manager --verbose ~/HelloSDN/Simple_Controller.py
+    2. Add single switche in mininet (use your favorite method):
+    $ sudo mn --topo single,3 --mac --controller remote --switch ovsk
+
+For a better instructions on using this code first do http://sdnhub.org/tutorials/ryu/. 
+
 """
 
 """
